@@ -19,6 +19,19 @@
 
 </head>
 
+<body>
+
+	<main>
+<picture>
+
+  <pre><img src="Dicksucker-logo-new.jpg"  alt="Door Stuck!" style="width:1890px;height:100%;">
+
+   </pre>  
+     </picture>
+		
+
+	</main>
+
 <div>
 		<div id="navbar" class="sticky">
 	<a href="https://buryon.ca/">Home</a>
@@ -29,34 +42,34 @@
 			
 </div>
 
-<body>
-	<main>
-<picture>
+    <audio src="./assets/music/Baboon.mp3" id="song"></audio>
 
-  <pre><img src="Dicksucker-logo-new.jpg"  alt="Door Stuck!" style="width:1890px;height:510px;">
+    <div class="container">  
+        <div class="box"></div>      
+        <img src="./assets/images/baboon.jpg" id="thumbnail" />
+        
+        <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
+        <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
+        <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
 
-   </pre>  
-     </picture>
-		
+     
 
+        <!-- Input element for progress bar - min=0 starting value of every song - max length will change per song so leave empty -->
+        
+        <input 
+            type="range" 
+            id="progress-bar" 
+            min="0" 
+            max="" 
+            value="0" 
+            onchange="changeProgressBar()"
+        />
 
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
 
-
-
-
-
-<iframe style="border-radius:12px"  src="https://open.spotify.com/embed/playlist/1kTVnKZmEEBuHKSXzfDX0a?utm_source=generator&theme=0" width="600" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">  </iframe>
-
-	
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1fP1xvJBwjDC0m05EbvdDv?utm_source=generator&theme=0" width="600" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/15aQi2uJsGKQt99TsRM5VU?utm_source=generator&theme=0" width="600" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-
-	
-
-
-	</main>
+    <script src="player.js"></script>
 </body>
 
 
