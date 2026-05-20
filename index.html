@@ -38,39 +38,8 @@
 	<a href="https://www.instagram.com/b.uryon/">Instagram</a>  
 	<a href="https://www.youtube.com/@ClickDude">YouTube</a> 
 	<a href="https://www.discogs.com/user/JamesZabor/collection">Discogs</a> 
-	<a href="https://www.last.fm/user/Zaybor">Last.fm</a> 
-			
-
-			
+	<a href="https://descent.live/zaybor">Listening to</a> 
 </div>
-
-    <audio src="./assets/music/Baboon.mp3" id="song"></audio>
-
-    <div class="container">  
-        <div class="box"></div>      
-        <img src="./assets/images/baboon.jpg" id="thumbnail" />
-        
-        <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
-        <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
-        <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
-
-     
-
-        <!-- Input element for progress bar - min=0 starting value of every song - max length will change per song so leave empty -->
-        
-        <input 
-            type="range" 
-            id="progress-bar" 
-            min="0" 
-            max="" 
-            value="0" 
-            onchange="changeProgressBar()"
-        />
-
-        <div class="currentTime"></div>
-        <div class="durationTime"></div>
-    </div>
-
     <script src="player.js"></script>
 </body>
 
